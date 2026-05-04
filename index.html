@@ -8,8 +8,6 @@
     <meta name="description" content="Embark on a journey of ascension. Work with Joy to transform your mind, body, and soul through customized guidance and spiritual balance.">
     
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
-    <link rel="preconnect" href="https://backend.leadconnectorhq.com" crossorigin="anonymous">
-    <link rel="preconnect" href="https://images.leadconnectorhq.com" crossorigin="anonymous">
     
     <style>
         :root { 
@@ -20,17 +18,22 @@
             --black: #000000;
             --color-mcddiqrd: #e1ccae;
             --color-mcddvlwo: #413625;
-            --headlinefont: 'Playfair Display';
-            --contentfont: 'Karla';
+            --headlinefont: 'Playfair Display', serif;
+            --contentfont: 'Karla', sans-serif;
             --text-color: #242424;
             --link-color: #188bf6; 
         }
-        body { margin: 0; font-family: var(--contentfont); color: var(--text-color); }
-        .section { padding: 60px 20px; text-align: center; border-bottom: 1px solid #eee; }
-        .nav-bar { background: #242424; padding: 20px; display: flex; justify-content: center; }
-        .nav-bar a { color: white; margin: 0 15px; text-decoration: none; font-family: var(--headlinefont); }
-        .btn { background: var(--color-mcddiqrd); color: var(--color-mcddvlwo); padding: 15px 30px; text-decoration: none; display: inline-block; margin-top: 20px; text-transform: uppercase; font-weight: bold; }
+        body { margin: 0; font-family: var(--contentfont); color: var(--text-color); line-height: 1.6; }
+        .section { padding: 80px 20px; text-align: center; }
+        .nav-bar { background: #242424; padding: 20px; display: flex; justify-content: center; position: sticky; top: 0; z-index: 1000; }
+        .nav-bar a { color: white; margin: 0 15px; text-decoration: none; font-family: var(--headlinefont); font-weight: bold; }
+        .btn { background: var(--color-mcddiqrd); color: var(--color-mcddvlwo); padding: 15px 30px; text-decoration: none; display: inline-block; margin-top: 20px; text-transform: uppercase; font-weight: bold; border-radius: 4px; }
         .price-tag { font-size: 1.5rem; color: #e93d3d; font-weight: bold; margin-top: 10px; }
+        .hero { background-color: #242424; color: white; padding: 100px 20px; }
+        .card { background: #f4e8d9; padding: 40px; border-radius: 15px; max-width: 900px; margin: 0 auto; display: flex; align-items: center; flex-wrap: wrap; text-align: left; }
+        .card-text { flex: 1; min-width: 300px; padding: 20px; }
+        .card-img { flex: 1; min-width: 300px; text-align: center; }
+        .card-img img { width: 100%; max-width: 450px; height: auto; border-radius: 10px; }
     </style>
 </head>
 <body>
@@ -43,38 +46,54 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="section" style="background-color: #242424; color: white;">
-        <h1 style="font-family: var(--headlinefont); font-size: 3rem;">An Ascension</h1>
-        <p>Your journey to Mind, Body & Soul Balance</p>
+    <section id="home" class="hero">
+        <h1 style="font-family: var(--headlinefont); font-size: 3.5rem; margin-bottom: 10px;">An Ascension</h1>
+        <p style="font-size: 1.2rem; opacity: 0.9;">Your journey to Mind, Body & Soul Balance</p>
     </section>
 
     <!-- Book Section -->
     <section class="section">
-        <h2 style="font-family: var(--headlinefont);">Featured Book</h2>
+        <h2 style="font-family: var(--headlinefont); font-size: 2.5rem;">The Path Ahead</h2>
         <p>Start your transformation today with our latest guide.</p>
         <div class="price-tag">Now $9.99 USD</div>
-        <a href="https://www.amazon.com/dp/B0GZ34K9C1" class="btn">Buy on Amazon</a>
+        <a href="https://www.amazon.com/dp/B0GZ34K9C1" target="_blank" class="btn">Buy on Amazon</a>
     </section>
 
     <!-- Work With Joy -->
     <section id="work" class="section" style="background-color: #f9f9f9;">
-        <h2 style="font-family: var(--headlinefont);">Work with Joy</h2>
+        <h2 style="font-family: var(--headlinefont); font-size: 2.5rem;">Work with Joy</h2>
         <p>Personalized sessions designed to keep you inspired, balanced, and energized.</p>
-        <a href="mailto:contact@anascension.com" class="btn" style="background: #764979; color: white;">Book a Session</a>
+        <a href="mailto:contact@anascension.com" class="btn" style="background: #764979; color: white;">Contact Joy</a>
+    </section>
+
+    <!-- Subscription & Comic Section (Replacing the old Yoga/Omar section) -->
+    <section class="section" style="background-color: #6b4d71; color: white;">
+        <div class="card">
+            <div class="card-text" style="color: #413625;">
+                <p style="text-transform: uppercase; font-weight: bold; font-size: 0.8rem;">Join Our Community</p>
+                <h2 style="font-family: var(--headlinefont); font-size: 2rem;">Weekly insights on faith, identity, and the architecture of the human mind..</h2>
+                <p>Never Miss an Update — Subscribe for Fresh Insights from Joy!</p>
+                <a href="#" class="btn" style="background: #764979; color: white;">Subscribe Now</a>
+            </div>
+            <div class="card-img">
+                <!-- Pointing to your uploaded image -->
+                <img src="Lighting%20the%20way%20ahead.jpg" alt="Lighting the way ahead comic">
+            </div>
+        </div>
     </section>
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="section">
-        <p style="text-transform: uppercase; letter-spacing: 2px;">Testimonial</p>
+        <p style="text-transform: uppercase; letter-spacing: 2px; font-weight: bold;">Testimonial</p>
         <h2 style="font-family: var(--headlinefont); font-size: 2.5rem;">Why Choose Joy</h2>
-        <div style="max-width: 800px; margin: 0 auto; font-style: italic;">
+        <div style="max-width: 800px; margin: 0 auto; font-style: italic; font-size: 1.2rem; padding: 20px;">
             <p>"The guidance provided here completely shifted my perspective on wellness. The balance I've found is irreplaceable."</p>
             <p><strong>— Previous Client</strong></p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="section" style="background: #242424; color: white; padding: 40px;">
+    <footer style="background: #242424; color: white; padding: 40px; text-align: center;">
         <p>&copy; 2026 An Ascension. All Rights Reserved.</p>
     </footer>
 
